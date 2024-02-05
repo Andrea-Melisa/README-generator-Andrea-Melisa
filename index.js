@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown"); // imports the function generateMarkdown from utils folder
 // console.log(generateMarkdown);
 
 // array of questions for user
@@ -30,7 +30,7 @@ const questions = [
         type: "list",
         message: "What licence is relevant to this project?",
         name: "license",
-        choices: ["MIT", "Apache", "GPLv3", "ISC", ]
+        choices: ["MIT", "Apache", "GPLv3", "ISC", "None"]
     },
     {
         type: "input",

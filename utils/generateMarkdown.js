@@ -1,8 +1,17 @@
+// Object with badges URLs from shields.io
+const licenseBadges = {
+  "MIT License": "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)",
+  "Apache License 2.0": "![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)",
+  "GNU General Public License v3.0": "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)",
+  "ISC License": "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)",
+  "None": "![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)",
+}
+
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.name}
 
-  License: ${data.license}
+  ${licenseBadges[data.license]}
 
   ## Description
   ${data.description}
