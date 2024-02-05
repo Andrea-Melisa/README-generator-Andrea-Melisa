@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
+// console.log(generateMarkdown);
 
 // array of questions for user
 const questions = [
@@ -28,7 +29,7 @@ const questions = [
     {
         type: "list",
         message: "What licence is relevant to this project?",
-        name: "licence",
+        name: "license",
         choices: ["MIT", "Apache", "GPLv3", "ISC", ]
     },
     {
@@ -38,7 +39,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "How can this code be tested?",
+        message: "How can this code be tested? What command should be run for testing?",
         name: "test"
     },
     {
@@ -59,17 +60,19 @@ const questions = [
     ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(fileName, template) {
 }
 
 // function to initialize program
 function init() {
-inquirer
-    .prompt(questions)
-    .then((answers) => {
-    console.log(answers)
-});
+inquirer.prompt(questions).then((answers) => {
+    console.log(answers);
+    const template = generateMarkdown(answers)
+    console.log(template)
+    writeToFile('README.md', template)  
+    });
 }
+
 
 // function call to initialize program
 init();
