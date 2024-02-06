@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown"); // imports the function generateMarkdown from utils folder
-// console.log(generateMarkdown);
+
 
 // array of questions for user
 const questions = [
@@ -76,8 +76,7 @@ function init() {
 inquirer.prompt(questions).then((answers) => {
     console.log(answers);
     const template = generateMarkdown(answers)
-    console.log(template)
-    writeToFile('README.md', template)  
+    writeToFile('Output/README.md', template)  
     });
 }
 

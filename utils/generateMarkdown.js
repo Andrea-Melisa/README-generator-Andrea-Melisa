@@ -38,7 +38,6 @@ function generateMarkdown(answers) {
   ${answers.contribute}
 
   ## Tests
-  To run tests, run the following command:
   ${answers.test}
 
   ## Questions
