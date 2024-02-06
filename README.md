@@ -44,13 +44,13 @@ node index.js
   ## Usage
   To run the README Generator execute "node index.js" in the terminal.
   Here you have a link to the demo video: https://drive.google.com/file/d/1f-reN-6FPSp70S0ivM4iYFepDYabJVdF/view
-  ![project demo](/README-generator-Andrea-Melisa/Assets/Video/README-DEMO.gif)
+  ![project demo](Assets/Video/README-DEMO.gif)
   
   Here you have a few screenshots of the process:
 
-  ![web intro](/README-generator-Andrea-Melisa/Assets/Screenshots/Questions.png)
-  ![web intro](/README-generator-Andrea-Melisa/Assets/Screenshots/README-created.png)
-  ![web intro](/README-generator-Andrea-Melisa/Assets/Screenshots/README.png)
+![web intro](Assets/Screenshots/Questions.png)
+![web intro](Assets/Screenshots/README-created.png)
+![web intro](Assets/Screenshots/README.png)
 
 
   ## License 
