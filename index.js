@@ -34,7 +34,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "How can others contribute?",
+        message: "Can others contribute?",
         name: "contribute"
     },
     {
